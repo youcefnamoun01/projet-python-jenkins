@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        /*stage('Build Docker Image') {
             steps {
                 sh 'docker build -t $ECR_REPOSITORY:$IMAGE_TAG .'
             }
@@ -48,6 +48,6 @@ pipeline {
                 docker push <AWS_ACCOUNT_ID>.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
                 '''
             }
-        }
+        }*/
     }
 }
